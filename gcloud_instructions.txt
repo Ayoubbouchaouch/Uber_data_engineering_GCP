@@ -1,0 +1,19 @@
+gcloud auth login YOUR_ACCOUNT_NAME
+
+gcloud config set project YOUR_PROJECT_ID
+
+gsutil ls
+
+gsutil mb gs://BUCKET_NAME
+
+gsutil cp FILE_PATH mb gs://BUCKET_NAME
+
+gcloud compute instances list
+
+gcloud compute instances create INSTANCE_NAME
+
+gcloud compute machine-types list --zones=ZONE_NAME
+
+gcloud compute instances create INSTANCE_NAME --machine-type=e2-standard-4 --zone=ZONE_NAME
+
+gcloud compute ssh INSTANCE_NAME
